@@ -45,7 +45,12 @@ class _LoginState extends State<Login> {
         crossAxisAlignment: CrossAxisAlignment.end,
         spacing: 5.0,
         children: [
-          CircleAvatar(),
+          CircleAvatar(
+            radius: 50.0,
+            backgroundImage: NetworkImage(
+              "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D1KzX5LsFbQY&psig=AOvVaw2UAcw-Cwe_BVu4fxyM5hgX&ust=1744854184240000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOj-psG224wDFQAAAAAdAAAAABAE"
+            ),
+          ),
           TextFormField(
             controller: _nameController,
             decoration: InputDecoration(
